@@ -1,38 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background: #0b1721;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+    margin: 5vh 0;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input {
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 9px 15px;
+    font-size: 16px;
+    margin-top: 2vh;
+    border: 3px solid #aaa;
+    transition: .35s;
+}
+
+.input:focus {
+    border-color: royalblue;
+    box-shadow: 0 0 0 8px 0 royalblue;
+}
+
+.backButton,
+.searchButton {
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+    font-size: 17px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: white;
+    background-color: royalblue;
+    box-shadow: 0 0 4px #999;
+    background-position: center;
+    transition: .8s;
+    margin: 3vh 0;
+}
+
+.backButton:hover,
+.searchButton:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.backButton:active,
+.searchButton:active {
+    background-color: #6eb9f7;
+    background-size: 100%;
+    transition: background 0s;
+}
+
 .App {
-  text-align: center;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 35vw;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.name,
+.capital,
+.currency,
+.name_subPage,
+.capital_subPage,
+.currency_subPage,
+.country_info {
+    font-size: 20px;
+    transition: .5s;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.name_subPage,
+.capital_subPage,
+.currency_subPage,
+.country_info {
+    cursor: default;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.name {
+    color: white;
+    font-size: 28px;
 }
 
-.App-link {
-  color: #61dafb;
+.name_subPage {
+    font-size: 32px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.capital:hover,
+.currency:hover {
+    background-color: darkgrey;
+    color: black;
+}
+
+.name:hover {
+    background-color: darkgrey;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+article {
+    margin: 5vh 0;
+}
+
+.item {
+    padding: 0 0 30px;
+}
+
+ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.flag {
+    width: 12vw;
 }
