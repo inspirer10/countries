@@ -133,3 +133,24 @@ ul {
 .flag {
     width: 12vw;
 }
+
+@media screen and (max-width: 750px) {
+    .flag {
+        width: 30vw;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .App {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .App {
+        max-width: 90vw;
+    }
+    .flag {
+        width: 40vw;
+    }
+}
