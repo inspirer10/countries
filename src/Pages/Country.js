@@ -7,7 +7,9 @@ const Country = () => {
     const [moreInfo, setMoreInfo] = useState(false);
 
     const pathname = window.location.pathname;
-    var countryName = pathname.substr(11, pathname.length); // /countries/ -11 znaków
+    const countryName = pathname.substring(11, pathname.length); // /countries/
+    //console.log(pathname)
+    //console.log(countryName)
 
     useEffect(() => {
         fetch(`https://restcountries.eu/rest/v2/name/${countryName}`)
